@@ -1,0 +1,65 @@
+$header-font: "adelle", $georgia;
+$body-font: "proxima-nova", $helvetica;
+
+body {
+  background: #333 url('/images/colin.jpg') center no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: table;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: em(100);
+  margin: 0;
+  font-family: $header-font;
+  line-height: 1;
+
+  span {
+    font-weight: 200;
+    display: block;
+  }
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 90vh;
+  padding: 0 10vh 10vh;
+}
+
+section {
+  border-top: 1px solid rgba(#fff, .4);
+  margin-top: 2em;
+  padding-top: 2em;
+  font-family: $body-font;
+
+  h2 {
+    font-size: em(18);
+    float: left;
+    margin: 0 1em 0 0;
+  }
+
+  ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      @include inline-block;
+      font-size: em(18);
+      font-weight: 200;
+    }
+  }
+
+  a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: right;
+    color: rgba(#fff, .8);
+    text-decoration: none;
+  }
+}
